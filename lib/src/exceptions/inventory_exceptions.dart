@@ -9,21 +9,21 @@ class InventoryException implements Exception {
 }
 
 class InventoryOperationException extends InventoryException {
-  InventoryOperationException(String message)
-      : super(message, code: 'OPERATION_FAILED');
+  InventoryOperationException(super.message)
+      : super(code: 'OPERATION_FAILED');
 }
 
 class InventoryNotFoundException extends InventoryException {
-  InventoryNotFoundException(String message)
-      : super(message, code: 'NOT_FOUND');
+  InventoryNotFoundException(super.message)
+      : super(code: 'NOT_FOUND');
 }
 
 class InventoryStockException extends InventoryException {
-  InventoryStockException(String message)
-      : super(message, code: 'INSUFFICIENT_STOCK');
+  InventoryStockException(super.message)
+      : super(code: 'INSUFFICIENT_STOCK');
 }
 
 class InventoryFetchException extends InventoryException {
-  InventoryFetchException(String message)
-      : super(message, code: 'FETCH_FAILED');
+  InventoryFetchException(super.message)
+      : super(code: 'FETCH_FAILED');
 }
