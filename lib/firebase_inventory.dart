@@ -1,7 +1,6 @@
 library firebase_inventory;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/exceptions/inventory_exceptions.dart';
+export 'src/models/inventory_category.dart';
+export 'src/models/inventory_item.dart';
+export 'src/services/firebase_inventory_service.dart';
